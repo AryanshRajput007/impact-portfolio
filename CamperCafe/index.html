@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+        rel="stylesheet"
+        />
+        <title>Camper Cafe</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                background-image: url(./coffee-beans.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                overflow: hidden;
+                z-index: -100;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box {
+                width: 600px;
+                height: 95vh;
+                background-color: #deb887;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: 60px;
+            }
+
+            .heading {
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 7px;
+            }
+
+            .established {
+                font-style: italic;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .menu img{
+                margin-left: 47%;
+            }
+
+            .menu1 h1,
+            .menu2 h1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            
+            .menu-item {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 5px 0;
+            }
+            
+            .menu-item h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 0 0 15px;
+            }
+            
+            .menu-item span {
+                font-size: 20px;
+                margin: 0 15px 0 0;
+            }
+            
+            .line {
+                width: 90%;
+                height: 3px;
+                background-color: rgb(179, 6, 6);
+                margin: 10px 0;
+            }
+
+            .footer {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="header">
+                <h1 class="heading">Camper Cafe</h1>
+                <p class="established">Est. 2020</p>
+            </div>
+            <div class="line"></div>
+            <div class="menu">
+                <div class="menu1">
+                    <h1 class="">Coffee</h1>
+                    <img class="" src="./coffee.png" alt="coffee" />
+
+                    <div class="menu1-items">
+                        <div class="menu-item">
+                            <h1>French Vanilla</h1>
+                            <span>3.00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Caramel Macchiato</h1>
+                            <span>3.75</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Pumpkin Spice</h1>
+                            <span >3.50</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Hazelnut</h1>
+                            <span>4.00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Mocha</h1>
+                            <span>4.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <div class="">
+                        <h1 >Desserts</h1>
+                        <img class="" src="./cake.png" alt="cake" />
+                    </div>
+                    <div class="menu2-items">
+                        <div class="menu-item">
+                            <h1 >Donut</h1>
+                            <span>1.50</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Cherry Pie</h1>
+                            <span>2.75</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Cheese Cake</h1>
+                            <span>3.00</span>
+                        </div>
+                        <div class="menu-item">
+                            <h1>Cinnamon Roll</h1>
+                            <span>2.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer">
+                <h1>Thank you for visiting!</h1>
+                <p>Have a great day!</p>
+            </div>
+        </div>
+    </body>
+</html>
